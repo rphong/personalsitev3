@@ -1,0 +1,25 @@
+$palette: (
+    black: #001219,
+    darkTurqoise: #005F73,
+    turqoise: #0A9396,
+    lightTurqoise: #94D2BD,
+    beige: #E9D8A6,
+    yellowOrange: #EE9B00,
+    orangeBrown: #CA6702,
+    brownRed: #BB3E03,
+    red: #AE2012,
+    maroon: #9B2226
+);
+
+$font: (
+    family: ('Raleway'),
+    weight: 300,
+    weight-bold: 400,
+);
+
+$breakpoints: (
+    laptop: 1441px,
+    laptopS: 1025px,
+    tablet: 769px,
+    mobileL: 426px,
+);
