@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Intro = () => {
     return (
@@ -6,6 +6,6 @@ const Intro = () => {
             <h1>Hello</h1>
         </div>
     )
-}
+};
 
-export default Intro
+export default Intro;

@@ -1,9 +1,9 @@
-import './css/main.scss'
+import './css/main.scss';
 
-import Intro from './sections/Intro'
-import Experience from './sections/Experience'
-import Hobbies from './sections/Hobbies'
-import Footer from './sections/Footer'
+import Intro from './sections/Intro';
+import Experience from './sections/Experience';
+import Hobbies from './sections/Hobbies';
+import Footer from './sections/Footer';
 
 function App() {
 	return (
@@ -14,6 +14,6 @@ function App() {
 			<Footer/>
 		</div>
 	)
-}
+};
 
-export default App
+export default App;
