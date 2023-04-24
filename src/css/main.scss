@@ -1,10 +1,19 @@
 //Reset
 @import '../../node_modules/normalize.css/normalize.css';
 
+//Font
+@import './fonts.scss'; 
+
 //Libs
 @import './libs/vars';
 @import './libs/functions';
 @import './libs/mixins';
 
 //Layout
-@import './layout/base'
+@import './layout/base';
+
+//Sections
+@import './sections/intro';
+@import './sections/experience';
+@import './sections/hobbies';
+@import './sections/footer';

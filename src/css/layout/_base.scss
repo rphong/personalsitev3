@@ -1,6 +1,11 @@
 //Text Styles
 h1, h2, h3, h4 {
     color: _palette(black);
+    font-family: _font(family);
+}
+
+h1 {
+    font-size: 5rem;
 }
 
 body {
