@@ -1,0 +1,20 @@
+.header-container {
+  display: flex;
+
+  .header-link {
+    margin: 2rem;
+    cursor: pointer;
+  }
+}
+
+.underline {
+  display: inline-block;
+}
+
+.underline::after {
+  content: "";
+  margin-top: 0.5rem;
+  height: 3px;
+  border-radius: 5px;
+  display: block;
+}

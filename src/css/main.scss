@@ -2,7 +2,7 @@
 @import '../../node_modules/normalize.css/normalize.css';
 
 //Font
-@import './fonts.scss'; 
+@import './fonts'; 
 
 //Libs
 @import './libs/vars';
@@ -12,8 +12,11 @@
 //Layout
 @import './layout/base';
 
-//Sections
-@import './sections/intro';
-@import './sections/experience';
-@import './sections/hobbies';
-@import './sections/footer';
+//Components
+@import './components/header';
+
+//Pages
+@import './pages/intro';
+@import './pages/experience';
+@import './pages/hobbies';
+@import './pages/footer';
