@@ -1,4 +1,15 @@
-#experience-wrapper {
-    background-color: _palette(lightTurqoise);
-    height: 100vh;
+.experience-wrapper {
+  background-color: _palette(pink);
+
+  .highlighted {
+    color: _palette(darkPinkNav);
+  }
+
+  .underline::after {
+    background: _palette(darkPinkNav);
+  }
+
+  .header-text {
+    color: #FBE5EA;
+  }
 }

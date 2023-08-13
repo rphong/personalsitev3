@@ -2,10 +2,17 @@
   display: flex;
 
   .header-link {
+    font-size: 0.8em;
     margin: 2rem;
     cursor: pointer;
   }
+
+  .header-link {
+    text-decoration: none;
+  }
 }
+
+
 
 .underline {
   display: inline-block;

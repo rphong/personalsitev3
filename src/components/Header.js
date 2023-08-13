@@ -1,14 +1,21 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="header-container">
-      <a className="header-link">
-        <span className="highlighted underline">HOME</span>
-      </a>
-      <a className="header-link">EXPERIENCE</a>
-      <a className="header-link">PROJECTS</a>
-      <a className="header-link">CONTACT</a>
+      <NavLink className="header-link highlighted underline" to="/">
+        HOME
+      </NavLink>
+      <NavLink className="header-link" to="/experience">
+        EXPERIENCE
+      </NavLink>
+      <NavLink className="header-link" to="/projects">
+        PROJECTS
+      </NavLink>
+      <NavLink className="header-link" to="/contact">
+        CONTACT
+      </NavLink>
     </div>
   );
 };
