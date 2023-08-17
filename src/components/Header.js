@@ -1,19 +1,37 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
+  const path = useLocation();
+
   return (
     <div className="header-container">
-      <NavLink className="header-link highlighted underline" to="/">
+      <NavLink to="/" 
+        className="header-link" 
+        state={{ previousPath: path.pathname }}
+      >
         HOME
       </NavLink>
-      <NavLink className="header-link" to="/experience">
+      <NavLink
+        to="/experience"
+        className="header-link"
+        state={{ previousPath: path.pathname }}
+      >
         EXPERIENCE
       </NavLink>
-      <NavLink className="header-link" to="/projects">
+      <NavLink
+        to="/projects"
+        className="header-link"
+        state={{ previousPath: path.pathname }}
+      >
         PROJECTS
       </NavLink>
-      <NavLink className="header-link" to="/contact">
+      <NavLink
+        to="/contact"
+        className="header-link"
+        state={{ previousPath: path.pathname }}
+      >
         CONTACT
       </NavLink>
     </div>

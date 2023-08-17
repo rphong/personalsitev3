@@ -1,11 +1,11 @@
 .experience-wrapper {
   background-color: _palette(pink);
 
-  .highlighted {
+  a.active {
     color: _palette(darkPinkNav);
   }
 
-  .underline::after {
+  a.active::after {
     background: _palette(darkPinkNav);
   }
 

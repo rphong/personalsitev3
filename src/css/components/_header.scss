@@ -1,4 +1,5 @@
 .header-container {
+  position: absolute;
   display: flex;
 
   .header-link {
@@ -10,18 +11,20 @@
   .header-link {
     text-decoration: none;
   }
+  
+  a.active {
+    display: inline-block;
+  }
+  
+  a.active::after {
+    content: "";
+    margin-top: 0.5rem;
+    height: 3px;
+    border-radius: 5px;
+    display: block;
+  }
+  
 }
 
 
 
-.underline {
-  display: inline-block;
-}
-
-.underline::after {
-  content: "";
-  margin-top: 0.5rem;
-  height: 3px;
-  border-radius: 5px;
-  display: block;
-}
