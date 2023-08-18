@@ -1,21 +1,4 @@
-.right-enter {
-    opacity: 0;
-    transform: translate(0, 25px);
-    z-index: 1;
-  }
-  .right-enter.right-enter-active {
-    opacity: 1;
-    transform: translate(0, 0);
-  
-    transition: opacity 250ms ease-out, transform 300ms ease;
-  }
-  .right-exit {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-  .right-exit.right-exit-active {
-    opacity: 0;
-    transform: translate(0, 30px);
-  
-    transition: opacity 250ms ease-out, transform 300ms ease;
-  }
+.animated-routes {
+  position: absolute;
+  width: 100%;
+}

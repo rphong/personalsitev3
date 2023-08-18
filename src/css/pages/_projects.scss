@@ -1,0 +1,15 @@
+.projects-wrapper {
+  background-color: _palette(blue);
+
+  a.active {
+    color: _palette(darkBlueNav);
+  }
+
+  a.active::after {
+    background: _palette(darkBlueNav);
+  }
+
+  .header-text {
+    color: #EDF7FB;
+  }
+}

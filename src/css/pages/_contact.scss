@@ -1,0 +1,15 @@
+.contact-wrapper {
+  background-color: _palette(purple);
+
+  a.active {
+    color: _palette(darkPurpleNav);
+  }
+
+  a.active::after {
+    background: _palette(darkPurpleNav);
+  }
+
+  .header-text {
+    color: #EDE6FA;
+  }
+}
