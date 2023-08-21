@@ -1,6 +1,9 @@
 .header-container {
+  width: 100vw;
   position: absolute;
+  z-index: 1;
   display: flex;
+  justify-content: center;
 
   .header-link {
     font-size: 0.8em;
@@ -19,9 +22,11 @@
   a.active::after {
     content: "";
     margin-top: 0.5rem;
-    height: 3px;
+    height: 2px;
     border-radius: 5px;
     display: block;
+    color: inherit;
+    background: currentColor;
   }
   
 }

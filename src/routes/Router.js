@@ -6,6 +6,7 @@ import Intro from '../pages/Intro';
 import Experience from '../pages/Experience';
 import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
+import Header from '../components/Header';
 
 export const pathIndex = [
   { path: '/', index: 1 },
@@ -38,21 +39,23 @@ const Router = () => {
     initial: null,
     config: {
       duration: 1000,
-      easing: easings.easeInOutQuart
+      easing: easings.easeInOutQuart,
     },
   });
 
   console.log(reverse);
 
   return transitions((style, item) => (
-    <animated.div style={style} className={'animated-routes'}>
-      <Routes location={item}>
-        <Route path='/' element={<Intro />} />
-        <Route path='/experience' element={<Experience />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/contact' element={<Contact />} />
-      </Routes>
-    </animated.div>
+    <Header>
+      <animated.div style={style} className={'animated-routes'}>
+        <Routes location={item}>
+          <Route path='/' element={<Intro />} />
+          <Route path='/experience' element={<Experience />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
+      </animated.div>
+    </Header>
   ));
 };
 
